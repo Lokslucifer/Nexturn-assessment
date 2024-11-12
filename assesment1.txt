@@ -45,7 +45,7 @@ function parseJSONData(jsonData){
     });
   };
 
-jsondata='{"products": [{"id": 1,"name": "Smartphone","category": "Electronics","price": 599.99,"available": true},{"id": 2,"name": "Laptop","category": "Electronics","price": 999.99,"available": false}]}'
+jsondata='{"products": [{"id": 1,"name": "Asus Smartphone","category": "Electronics","price": 40000,"available": true},{"id": 2,"name": "Acer Laptop","category": "Electronics","price": 80000,"available": false}]}'
 catalog=parseJSONData(jsondata)
 console.log("catalog")
 display(catalog)
@@ -57,14 +57,14 @@ console.log("electronic products")
 console.log(electronicsProducts)
 newProduct={
     "id": 3,
-    "name": "Coffee Maker",
+    "name": "Pigeon stove",
     "category": "Home Appliances",
-    "price": 49.99,
+    "price": 2500,
     "available": true
   }
 
 catalog=addProduct(catalog, newProduct);
-updateProductPrice(catalog, 2, 950.00);
+updateProductPrice(catalog, 2, 90000);
 display(catalog)
 
 
